@@ -24,8 +24,8 @@ export const projects: Project[] = [
   {
     slug: "ai-application",
     number: "01",
-    title: "AI 应用体验设计",
-    englishTitle: "AI Application Experience Design",
+    title: "AI辅助体验设计",
+    englishTitle: "AI-assisted Experience Design",
     category: "AI 应用 / 智能交互 / 产品体验",
     year: "2026",
     accent: "#b58cff",

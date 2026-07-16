@@ -1,5 +1,6 @@
 import { SiteHeader } from "./components/SiteHeader";
 import { ProjectExperience } from "./components/ProjectExperience";
+import SplashCursor from "./components/SplashCursor";
 
 const capabilities = ["用户研究", "体验策略", "交互设计", "视觉系统", "移动端 / iPad / Web 适配"];
 
@@ -25,6 +26,15 @@ export default function Home() {
           />
         </video>
         <div className="hero-darken" />
+        <SplashCursor
+          DYE_RESOLUTION={720}
+          DENSITY_DISSIPATION={3.2}
+          SPLAT_RADIUS={0.18}
+          SPLAT_FORCE={5200}
+          RAINBOW_MODE={false}
+          COLOR="#ff724c"
+          COLOR_SECONDARY="#7657ff"
+        />
         <div className="light-ribbon ribbon-one" />
         <div className="light-ribbon ribbon-two" />
         <div className="grain" />

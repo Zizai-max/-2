@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "../../components/SiteHeader";
-import { getNextProject, getProject, projects } from "../../site-data";
+import { getProject, projects } from "../../site-data";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -22,7 +22,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const project = getProject(slug);
   if (!project) notFound();
 
-  const nextProject = getNextProject(project.slug);
   const projectStyle = { "--project-accent": project.accent } as CSSProperties;
 
   return (
@@ -37,7 +36,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <div className="case-hero-inner shell">
           <div className="case-breadcrumb">
             <Link href="/#work">← ALL PROJECTS</Link>
-            <span>{project.number} / 03</span>
+            <span>{project.number} / 04</span>
           </div>
           <div className="case-title-block">
             <p>{project.category}</p>
@@ -84,24 +83,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         ))}
       </div>
 
-      <section className="case-next">
-        <div className="case-next-inner shell">
-          <p className="orange-kicker">{nextProject ? "NEXT CASE" : "END OF PROJECTS"}</p>
-          {nextProject ? (
-            <Link href={`/projects/${nextProject.slug}`}>
-              <span>{nextProject.number} / 03</span>
-              <h2>{nextProject.title}</h2>
-              <b>继续浏览 ↗</b>
-            </Link>
-          ) : (
-            <Link href="/thanks">
-              <span>THANK YOU</span>
-              <h2>谢谢观看</h2>
-              <b>进入收尾页 ↗</b>
-            </Link>
-          )}
-        </div>
-      </section>
     </main>
   );
 }

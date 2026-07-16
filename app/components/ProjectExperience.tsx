@@ -3,6 +3,7 @@
 import type { CSSProperties } from "react";
 import { useEffect, useState } from "react";
 import { projects } from "../site-data";
+import BorderGlow from "./BorderGlow";
 
 export function ProjectExperience() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -26,30 +27,35 @@ export function ProjectExperience() {
     setActiveIndex(index);
   };
 
-  const closeToThanks = () => {
-    setActiveIndex(null);
-    window.setTimeout(() => document.querySelector("#thanks")?.scrollIntoView({ behavior: "smooth" }), 50);
-  };
-
   return (
     <>
       <div className="project-entry-list shell">
         {projects.map((project, index) => (
-          <button className="project-entry" type="button" onClick={() => openProject(index)} key={project.slug}>
-            <div className="entry-image">
-              <img src={project.coverImage} alt="" aria-hidden="true" />
-              <span className="entry-overlay" />
-            </div>
-            <span className="entry-copy">
-              <span className="entry-number">{project.number} / {project.year}</span>
-              <span className="entry-text">
-                <span className="entry-category">{project.category}</span>
-                <strong>{project.title}</strong>
-                <span>{project.englishTitle}</span>
+          <BorderGlow
+            key={project.slug}
+            className="project-glow"
+            glowColor={index % 2 === 0 ? "18 92 68" : "264 86 72"}
+            colors={index % 2 === 0
+              ? ["#ff8454", "#a56cff", "#ffc07b"]
+              : ["#9d78ff", "#ff6f91", "#63b8ff"]}
+            animated={index === 0}
+          >
+            <button className="project-entry" type="button" onClick={() => openProject(index)}>
+              <div className="entry-image">
+                <img src={project.coverImage} alt="" aria-hidden="true" />
+                <span className="entry-overlay" />
+              </div>
+              <span className="entry-copy">
+                <span className="entry-number">{project.number} / {project.year}</span>
+                <span className="entry-text">
+                  <span className="entry-category">{project.category}</span>
+                  <strong>{project.title}</strong>
+                  <span>{project.englishTitle}</span>
+                </span>
+                <span className="entry-arrow" aria-hidden="true">↗</span>
               </span>
-              <span className="entry-arrow" aria-hidden="true">↗</span>
-            </span>
-          </button>
+            </button>
+          </BorderGlow>
         ))}
       </div>
 
@@ -106,24 +112,6 @@ export function ProjectExperience() {
               </section>
             ))}
 
-            <section className="viewer-next">
-              <div className="shell">
-                <p>{activeIndex < projects.length - 1 ? "NEXT PROJECT" : "END OF PROJECTS"}</p>
-                {activeIndex < projects.length - 1 ? (
-                  <button type="button" onClick={() => setActiveIndex(activeIndex + 1)}>
-                    <span>{String(activeIndex + 2).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}</span>
-                    <strong>{projects[activeIndex + 1].title}</strong>
-                    <b>点击继续 ↗</b>
-                  </button>
-                ) : (
-                  <button type="button" onClick={closeToThanks}>
-                    <span>THANK YOU</span>
-                    <strong>谢谢观看</strong>
-                    <b>进入收尾页 ↗</b>
-                  </button>
-                )}
-              </div>
-            </section>
           </div>
         </div>
       ) : null}
