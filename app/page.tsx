@@ -92,6 +92,15 @@ export default function Home() {
               我相信清晰的体验秩序与有记忆点的视觉表达可以同时成立。工作中重视与产品、
               研发的协作沟通，善于从真实用户问题出发，将复杂需求转化为可理解、可执行的设计方案。
             </p>
+            <div className="profile-ai-note">
+              <span>AI COLLABORATION</span>
+              <p>
+                我是一名关注用户体验与AI协作的UX/UI设计师。除了用户研究、场景分析、交互设计和视觉设计，
+                我也在探索如何将AI融入完整设计流程。我能够搭建面向设计任务的AI Skills，将研究方法、执行规则、
+                证据约束和输出模板沉淀为可复用工作流，并使用AI辅助视觉探索和交互原型开发。对我而言，AI不是替代
+                设计判断的工具，而是提升研究效率、扩大方案探索范围并加速验证的设计协作者。
+              </p>
+            </div>
             <div className="capability-list" aria-label="专业能力">
               {capabilities.map((capability, index) => (
                 <span key={capability}><small>0{index + 1}</small>{capability}</span>

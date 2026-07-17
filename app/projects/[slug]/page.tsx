@@ -60,6 +60,28 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
+      {project.workflowGroups ? (
+        <section className="project-workflow shell">
+          <div className="project-workflow-head">
+            <p className="orange-kicker">AI DESIGN WORKFLOW</p>
+            <h3>让 AI 成为可复用的设计协作者</h3>
+            <p>从研究、体验定义到视觉与原型开发，将 AI 的介入点沉淀为清晰、可复用、可验证的设计流程。</p>
+          </div>
+          <div className="workflow-skill-tags">
+            {project.skillTags?.map((tag) => <span key={tag}>{tag}</span>)}
+          </div>
+          <div className="workflow-matrix">
+            {project.workflowGroups.map((group, groupIndex) => (
+              <article key={group.title}>
+                <span>0{groupIndex + 1}</span>
+                <h4>{group.title}</h4>
+                <ul>{group.items.map((item) => <li key={item}>{item}</li>)}</ul>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       <div className="case-sections">
         {project.sections.map((section, sectionIndex) => (
           <section className="case-section" key={section.eyebrow}>

@@ -17,6 +17,11 @@ export type Project = {
   intro: string;
   role: string;
   scope: string;
+  skillTags?: string[];
+  workflowGroups?: Array<{
+    title: string;
+    items: string[];
+  }>;
   sections: ProjectSection[];
 };
 
@@ -34,6 +39,17 @@ export const projects: Project[] = [
       "围绕 AI 学习应用的首页体验，探索人格化角色、任务推荐与多模态提问的组合方式，让智能能力以更轻松、更易理解的方式进入真实学习场景。",
     role: "UX / UI Designer",
     scope: "AI 产品概念、首页框架、交互探索、视觉方案、体验验证",
+    skillTags: ["AI工作流", "AI skills搭建", "vibe coding"],
+    workflowGroups: [
+      {
+        title: "UX设计",
+        items: ["前期需求分析", "用户研究辅助", "竞品分析", "用户场景与交互流程", "可用性测试辅助", "UX文案情感化"],
+      },
+      {
+        title: "UI设计",
+        items: ["视觉探索", "界面方案生成", "图片与素材处理", "设计稿转代码"],
+      },
+    ],
     sections: [
       {
         eyebrow: "01 / CONCEPT",
@@ -61,8 +77,8 @@ export const projects: Project[] = [
   {
     slug: "fan-benefits",
     number: "02",
-    title: "百度粉丝权益体系及签到日历",
-    englishTitle: "Baidu Fan Benefits & Check-in Calendar",
+    title: "粉丝成长与签到激励体系升级",
+    englishTitle: "From Task-driven Flower Gifting to a Sustainable Fan Relationship System",
     category: "粉丝体验 / 权益体系 / 移动端",
     year: "2026",
     accent: "#ff8759",
