@@ -136,7 +136,7 @@ export function ProjectExperience() {
                   <h3>{section.title}</h3>
                   <p>{section.description}</p>
                 </div>
-                <div className="viewer-gallery shell">
+                <div className={`viewer-gallery shell${activeProject.galleryStyle ? ` gallery-${activeProject.galleryStyle}` : ""}`}>
                   {section.images.map((image, imageIndex) => (
                     <figure className={imageIndex === 0 && section.images.length > 2 ? "viewer-featured" : ""} key={image}>
                       <img src={image} alt={`${activeProject.title} - ${section.title} ${imageIndex + 1}`} />

@@ -193,6 +193,10 @@ img, video { display: block; max-width: 100%; }
 .viewer-gallery figure { margin: 0; min-width: 0; }.viewer-gallery figure.viewer-featured { grid-column: 1 / -1; }
 .viewer-gallery img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid rgba(255,255,255,.08); background: #170d0e; }
 .viewer-gallery figcaption { padding-top: 8px; color: #615554; font: 600 7px/1 var(--font-geist-mono), monospace; letter-spacing: .1em; }
+.viewer-gallery.gallery-contained, .case-gallery.gallery-contained { width: min(1500px, var(--shell)); grid-template-columns: 1fr; gap: clamp(28px, 4vw, 64px); }
+.gallery-contained figure, .gallery-contained figure.viewer-featured, .gallery-contained figure.gallery-featured { grid-column: auto; padding: clamp(12px, 1.7vw, 28px); border: 1px solid rgba(255,255,255,.12); border-radius: clamp(18px, 2vw, 30px); background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018)); box-shadow: 0 24px 70px rgba(0,0,0,.24); }
+.gallery-contained img, .viewer-gallery.gallery-contained img, .case-gallery.gallery-contained img { width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; border: 0; border-radius: clamp(10px, 1vw, 17px); background: #f3eee7; }
+.gallery-contained figcaption { padding: 14px 4px 0; color: rgba(255,255,255,.38); }
 .viewer-next { margin-top: 125px; min-height: 72vh; background: var(--project-accent); color: #150706; }
 .viewer-next > div { min-height: 72vh; padding: 82px 0 45px; display: flex; flex-direction: column; }
 .viewer-next p { margin: 0; color: rgba(21,7,6,.52); font: 600 9px/1 var(--font-geist-mono), monospace; letter-spacing: .13em; }

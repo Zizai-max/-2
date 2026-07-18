@@ -14,6 +14,7 @@ export type Project = {
   year: string;
   accent: string;
   coverImage: string;
+  galleryStyle?: "contained";
   intro: string;
   role: string;
   scope: string;
@@ -83,39 +84,42 @@ export const projects: Project[] = [
     year: "2026",
     accent: "#ff8759",
     coverImage: "/portfolio/pages/p03.jpg",
+    galleryStyle: "contained",
     intro:
       "围绕粉丝与明星关系链，重构权益触达、等级成长与签到机制，让分散的互动行为形成可感知、可持续的陪伴体验。",
     role: "UX / UI Designer",
     scope: "需求分析、竞品研究、体验策略、交互设计、视觉呈现",
     sections: [
       {
-        eyebrow: "01 / DEFINE",
-        title: "从业务目标到用户价值",
+        eyebrow: "01 / USER SCENARIOS",
+        title: "六个典型用户场景",
         description:
-          "项目从粉丝使用动机与现有权益断点出发，梳理核心任务、增长目标及关键体验指标，明确“提升权益感知、降低参与门槛、加强情感连接”的设计方向。",
-        images: ["/portfolio/pages/p04.jpg", "/portfolio/pages/p05.jpg"],
+          "从粉丝与明星互动的真实动机出发，归纳权益获取、内容参与、日常签到与情感表达等典型场景，为后续体验框架建立清晰的用户语境。",
+        images: ["/portfolio/fan-growth/01-user-scenarios.svg"],
       },
       {
-        eyebrow: "02 / RESEARCH",
-        title: "让分散的权益形成完整链路",
+        eyebrow: "02 / USER JOURNEY",
+        title: "用户旅程地图",
         description:
-          "通过竞品机制对比与典型行为拆解，定位等级、补签、送花与签到日历之间的关系，并将复杂规则转译成清晰的用户路径。",
-        images: ["/portfolio/pages/p06.jpg", "/portfolio/pages/p07.jpg", "/portfolio/pages/p08.jpg"],
+          "沿着用户从进入、理解、参与到持续回访的完整路径，梳理关键行为、情绪变化和体验断点，定位签到激励与粉丝成长体系的核心机会。",
+        images: ["/portfolio/fan-growth/02-user-journey.svg"],
       },
       {
-        eyebrow: "03 / EXPERIENCE",
-        title: "建立更有陪伴感的粉丝体验",
+        eyebrow: "03 / COMPETITIVE RESEARCH",
+        title: "从市场全景到重点竞品",
         description:
-          "优化粉丝权益入口和成长反馈，新增签到日历视图，并升级送花弹窗、彩蛋反馈与信息层级，在效率与情感表达之间取得平衡。",
+          "先通过竞品全景对比建立市场认知，再聚焦代表性产品拆解关键 UX 机制，为权益层级、激励节奏与情感反馈提供设计依据。",
         images: [
-          "/portfolio/pages/p10.jpg",
-          "/portfolio/pages/p11.jpg",
-          "/portfolio/pages/p12.jpg",
-          "/portfolio/pages/p13.jpg",
-          "/portfolio/pages/p14.jpg",
-          "/portfolio/pages/p15.jpg",
-          "/portfolio/pages/p16.jpg",
+          "/portfolio/fan-growth/03-competitor-landscape.svg",
+          "/portfolio/fan-growth/04-competitor-ux.svg",
         ],
+      },
+      {
+        eyebrow: "04 / SOLUTION",
+        title: "粉丝成长与签到激励体系升级",
+        description:
+          "将前期研究结论收束为完整方案，从任务驱动的送花行为出发，重构成长等级、签到反馈与长期关系维护机制，形成更可持续的粉丝体验系统。",
+        images: ["/portfolio/fan-growth/05-fan-growth-system.svg"],
       },
     ],
   },

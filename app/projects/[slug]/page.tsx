@@ -90,7 +90,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               <h2>{section.title}</h2>
               <p>{section.description}</p>
             </div>
-            <div className={`case-gallery shell gallery-${Math.min(section.images.length, 3)}`}>
+            <div className={`case-gallery shell gallery-${Math.min(section.images.length, 3)}${project.galleryStyle ? ` gallery-${project.galleryStyle}` : ""}`}>
               {section.images.map((image, imageIndex) => (
                 <figure
                   className={imageIndex === 0 && section.images.length > 2 ? "gallery-featured" : ""}
