@@ -121,6 +121,20 @@ export const projects: Project[] = [
           "将前期研究结论收束为完整方案，从任务驱动的送花行为出发，重构成长等级、签到反馈与长期关系维护机制，形成更可持续的粉丝体验系统。",
         images: ["/portfolio/fan-growth/05-fan-growth-system.svg"],
       },
+      {
+        eyebrow: "05 / GROWTH PATH",
+        title: "粉丝成长脉络",
+        description:
+          "梳理粉丝从初次互动到持续参与的成长路径，明确不同阶段的目标、行为与反馈，让等级变化与关系沉淀形成可理解的长期脉络。",
+        images: ["/portfolio/fan-growth/06-fan-growth-path.svg"],
+      },
+      {
+        eyebrow: "06 / KEY INTERACTION",
+        title: "送花弹窗体验设计",
+        description:
+          "围绕送花这一高频情感表达行为，优化信息层级、操作反馈与视觉氛围，使关键互动既保持效率，也具备更清晰的情绪价值。",
+        images: ["/portfolio/fan-growth/07-flower-popup.svg"],
+      },
     ],
   },
   {
