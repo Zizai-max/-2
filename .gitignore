@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/.pnpm-store/
 /.pnp
 .pnp.*
 .yarn/*
@@ -36,6 +37,11 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# local tooling and hosting metadata
+/.agents/
+/.openai/
+/tmp/
 
 # typescript
 next-env.d.ts
