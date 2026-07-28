@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 794 1123">
+  <title>朱星梦｜产品设计师·交互设计师｜中文简历</title>
+  <desc>可编辑文字与矢量图形组成的一页式A4简历</desc>
+  <defs>
+    <style>
+      .font{font-family:"Noto Sans CJK SC","PingFang SC","Microsoft YaHei",Arial,sans-serif}
+      .navy{fill:#13243A}.ink{fill:#22313F}.muted{fill:#647382}.teal{fill:#18727C}
+      .name{font-size:34px;font-weight:700;letter-spacing:1px}
+      .role{font-size:15px;font-weight:700;letter-spacing:.4px}
+      .meta{font-size:10.5px;font-weight:400}
+      .section{font-size:16px;font-weight:700;letter-spacing:.25px}
+      .roleline{font-size:13px;font-weight:700}
+      .date{font-size:10.5px;font-weight:400}
+      .project{font-size:12.5px;font-weight:700}
+      .tag{font-size:9px;font-weight:700}
+      .body{font-size:10.7px;font-weight:400}
+      .label{font-size:10.5px;font-weight:700}
+    </style>
+  </defs>
+
+  <rect width="794" height="1123" fill="#FFFFFF"/>
+
+  <g id="header">
+    <text id="name" class="font name navy" x="44" y="76">朱星梦</text>
+    <text id="target-role" class="font role teal" x="44" y="111">产品设计师 · 交互设计师</text>
+    <text id="contact" class="font meta muted" x="44" y="138">手机号  |  邮箱  |  作品集链接</text>
+    <text id="availability" class="font meta muted" x="44" y="160">求职意向：江浙沪  |  离职，可尽快到岗</text>
+
+    <g id="photo-placeholder">
+      <rect x="650" y="40" width="100" height="128" rx="2" fill="#EDF2F5" stroke="#B7C5CE" stroke-width="1.5"/>
+      <text class="font meta muted" x="700" y="98" text-anchor="middle" font-weight="700">照片</text>
+      <text class="font meta muted" x="700" y="118" text-anchor="middle" font-weight="700">PHOTO</text>
+    </g>
+  </g>
+
+  <g id="profile">
+    <rect x="40" y="188" width="714" height="60" rx="2" fill="#EAF4F3"/>
+    <text class="font label teal" x="52" y="211">个人概述</text>
+    <text class="font body ink" x="111" y="211">
+      <tspan x="111">具有百度垂类搜索体验设计经历与视觉传达设计背景，关注搜索落地页、AI伴学和内容互动场景。</tspan>
+      <tspan x="52" dy="21">能够围绕用户任务梳理信息层级与交互路径，并持续探索AI辅助需求拆解、设计建议和质量检查工作流。</tspan>
+    </text>
+  </g>
+
+  <g id="experience">
+    <text class="font section teal" x="48" y="281">工作经历  EXPERIENCE</text>
+    <text class="font roleline navy" x="48" y="309">百度｜垂类搜索组 · 体验设计师</text>
+    <text class="font date muted" x="746" y="309" text-anchor="end">2025.10 — 2026.05</text>
+
+    <circle cx="52" cy="334" r="2" fill="#18727C"/>
+    <text class="font body ink" x="65" y="338">负责垂类搜索结果落地页体验设计，围绕用户搜索意图、内容层级和关键操作路径输出可落地的页面方案。</text>
+    <circle cx="52" cy="361" r="2" fill="#18727C"/>
+    <text class="font body ink" x="65" y="365">参与需求理解、方案评审、视觉交付与上线走查，在产品目标、内容表达和页面一致性之间推进设计落地。</text>
+    <circle cx="52" cy="388" r="2" fill="#18727C"/>
+    <text class="font body ink" x="65" y="392">参与AI伴学与粉丝互动相关体验优化，关注规则理解、任务效率和情绪反馈等关键体验问题。</text>
+  </g>
+
+  <g id="selected-projects">
+    <text class="font section teal" x="48" y="431">核心项目  SELECTED PROJECTS</text>
+
+    <g id="project-search">
+      <text class="font project navy" x="48" y="460">01｜垂类搜索结果落地页</text>
+      <rect x="205" y="445" width="52" height="20" rx="10" fill="#EAF4F3"/>
+      <text class="font tag teal" x="231" y="459" text-anchor="middle">真实业务</text>
+      <circle cx="52" cy="485" r="2" fill="#18727C"/>
+      <text class="font body ink" x="65" y="489">从搜索场景出发梳理首屏信息优先级、内容组织与页面浏览节奏，帮助用户更快定位有效信息。</text>
+      <circle cx="52" cy="512" r="2" fill="#18727C"/>
+      <text class="font body ink" x="65" y="516">针对不同垂类内容形态进行页面适配与交付走查，关注组件复用、多端一致性和研发落地质量。</text>
+    </g>
+
+    <g id="project-ai-learning">
+      <text class="font project navy" x="48" y="553">02｜AI伴学 · 文心老师</text>
+      <rect x="188" y="538" width="108" height="20" rx="10" fill="#EAF4F3"/>
+      <text class="font tag teal" x="242" y="552" text-anchor="middle">真实项目 + 自主深化</text>
+      <circle cx="52" cy="578" r="2" fill="#18727C"/>
+      <text class="font body ink" x="65" y="582">参与面向小学、初中和高中学生的答题讲解体验，梳理提问、理解、讲解和继续追问的核心链路。</text>
+      <circle cx="52" cy="605" r="2" fill="#18727C"/>
+      <text class="font body ink" x="65" y="609">在真实项目基础上继续探索首页入口与语音输入体验，关注低龄用户的表达门槛、纠错与反馈。</text>
+    </g>
+
+    <g id="project-fan">
+      <text class="font project navy" x="48" y="646">03｜粉丝送花与签到日历</text>
+      <rect x="202" y="631" width="52" height="20" rx="10" fill="#EAF4F3"/>
+      <text class="font tag teal" x="228" y="645" text-anchor="middle">互动激励</text>
+      <circle cx="52" cy="671" r="2" fill="#18727C"/>
+      <text class="font body ink" x="65" y="675">围绕送花表达和签到激励场景，梳理首次理解、持续参与与断签回归等关键体验节点。</text>
+      <circle cx="52" cy="698" r="2" fill="#18727C"/>
+      <text class="font body ink" x="65" y="702">优化规则呈现、任务反馈和情绪化激励，帮助不同活跃度用户理解参与价值与成长路径。</text>
+    </g>
+  </g>
+
+  <g id="ai-design-practice">
+    <text class="font section teal" x="48" y="745">AI设计探索  AI DESIGN PRACTICE</text>
+    <circle cx="52" cy="771" r="2" fill="#18727C"/>
+    <text class="font body ink" x="65" y="775">将需求理解、页面策略、参考整理、设计建议和质量检查拆解为可协作的Agent能力，探索设计经验产品化与生产链路自动化。</text>
+  </g>
+
+  <g id="skills">
+    <text class="font section teal" x="48" y="820">专业能力  SKILLS</text>
+    <text class="font label teal" x="48" y="849">设计方法</text>
+    <text class="font body ink" x="106" y="849">需求分析 · 信息架构 · 交互流程 · 原型设计 · 视觉设计 · 设计走查</text>
+    <text class="font label teal" x="48" y="876">工具与AI</text>
+    <text class="font body ink" x="106" y="876">Figma · Photoshop · Illustrator · ChatGPT · Codex · LiblibAI</text>
+  </g>
+
+  <g id="education-awards">
+    <text class="font section teal" x="48" y="923">教育与荣誉  EDUCATION &amp; AWARDS</text>
+    <text class="font roleline navy" x="48" y="953">长春科技学院｜视觉传达设计 · 本科</text>
+    <text class="font date muted" x="746" y="953" text-anchor="end">2021 — 2025</text>
+    <text class="font body ink" x="48" y="981">米兰设计周设计竞赛国家级奖项  ·  校级优秀毕业论文</text>
+  </g>
+</svg>

@@ -3,6 +3,7 @@ export type ProjectSection = {
   title: string;
   description: string;
   images: string[];
+  galleryStyle?: "three-up" | "contained";
 };
 
 export type Project = {
@@ -30,7 +31,7 @@ export const projects: Project[] = [
   {
     slug: "ai-application",
     number: "01",
-    title: "AI辅助体验设计",
+    title: "AI Workflow Designer",
     englishTitle: "AI-assisted Experience Design",
     category: "AI 应用 / 智能交互 / 产品体验",
     year: "2026",
@@ -53,25 +54,18 @@ export const projects: Project[] = [
     ],
     sections: [
       {
-        eyebrow: "01 / CONCEPT",
-        title: "把 AI 能力转译为可感知的应用体验",
+        eyebrow: "",
+        title: "AI协作设计工作流实践",
         description:
-          "从学习陪伴的真实任务出发，将复杂的模型能力拆解为角色沟通、问题推荐和拍照讲题等清晰入口，建立用户第一次进入应用时的理解路径。",
-        images: ["/portfolio/pages/p17.jpg", "/portfolio/pages/p18.jpg"],
-      },
-      {
-        eyebrow: "02 / INTERACTION",
-        title: "探索更自然的首页信息组织",
-        description:
-          "围绕内容卡片、提问入口与角色反馈进行多轮方案对比，在信息效率、亲和感和操作聚焦之间寻找平衡。",
-        images: ["/portfolio/pages/p19.jpg", "/portfolio/pages/p20.jpg"],
-      },
-      {
-        eyebrow: "03 / VISUAL",
-        title: "用轻量视觉强化智能感知",
-        description:
-          "通过渐变色、柔和光感和克制的动态反馈建立 AI 产品氛围，同时保持学习场景需要的清晰度与可信度。",
-        images: ["/portfolio/pages/p21.jpg"],
+          "从 UX Research Skill 的研究方法沉淀，到 LiblibAI 辅助视觉探索，再到 Vibe Coding 快速完成交互原型；进一步拆解 Agent 模型与设计生产链路，将 AI 能力组织为可复用、可验证的完整设计协作流程。",
+        galleryStyle: "contained",
+        images: [
+          "/portfolio/ai-application/01-ux-research-skill.svg",
+          "/portfolio/ai-application/02-liblib-image.svg",
+          "/portfolio/ai-application/03-vibe-coding.svg",
+          "/portfolio/ai-application/04-design-production-workflow.svg",
+          "/portfolio/ai-application/05-agent-model.svg",
+        ],
       },
     ],
   },
@@ -133,7 +127,43 @@ export const projects: Project[] = [
         title: "送花弹窗体验设计",
         description:
           "围绕送花这一高频情感表达行为，优化信息层级、操作反馈与视觉氛围，使关键互动既保持效率，也具备更清晰的情绪价值。",
-        images: ["/portfolio/fan-growth/07-flower-popup.svg"],
+        images: [
+          "/portfolio/fan-growth/07-flower-popup.svg",
+          "/portfolio/fan-growth/07-signin-calendar.svg",
+          "/portfolio/fan-growth/07-fan-followup-01.svg",
+          "/portfolio/fan-growth/07-fan-followup-02.svg",
+          "/portfolio/fan-growth/07-fan-followup-03.svg",
+          "/portfolio/fan-growth/07-fan-followup-04.svg",
+        ],
+      },
+      {
+        eyebrow: "07 / OTHER DIRECTIONS",
+        title: "其他方案探索",
+        description:
+          "在核心方案之外保留不同的信息组织与视觉表达方向，通过并行探索对比体验重点，为最终设计判断提供更完整的方案依据。",
+        images: ["/portfolio/fan-growth/08-other-solutions.svg"],
+      },
+      {
+        eyebrow: "08 / AI VISUAL EXPLORATION",
+        title: "AI探索UI视觉设计",
+        description:
+          "围绕粉丝成长、签到激励与长期关系建立，使用 AI 并行探索不同的界面视觉方向。从任务成长、陪伴叙事到游戏化与数据反馈，在统一业务目标下比较信息密度、情感氛围与激励感知，辅助最终视觉判断。",
+        galleryStyle: "three-up",
+        images: [
+          "/portfolio/fan-growth/ai-ui-exploration/visual-01.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-02.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-03.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-04.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-05.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-06.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-07.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-08.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-09.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-10.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-11.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-12.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-13.png",
+        ],
       },
     ],
   },
@@ -152,36 +182,45 @@ export const projects: Project[] = [
     scope: "概念设计、体验框架、对话交互、视觉方案、动效规范",
     sections: [
       {
-        eyebrow: "01 / PERSONA",
-        title: "先建立关系，再开始学习",
+        eyebrow: "01 / TRUST & ONBOARDING",
+        title: "从首次理解到角色信任",
         description:
-          "首页以“文心老师”的人格化形象作为体验锚点，通过轻量问候、动态提示与可变状态建立亲和力，让 AI 不只是工具，而是一位随时可以交流的学习伙伴。",
+          "以清晰的首页价值表达和人格化的文心老师作为体验起点，降低用户理解 AI 能力的门槛。通过轻量问候、任务入口与状态反馈，让用户在第一次进入时就知道可以做什么，并逐步建立对学习伙伴的信任。",
+        galleryStyle: "contained",
         images: [
-          "/portfolio/pages/p18.jpg",
-          "/portfolio/pages/p19.jpg",
-          "/portfolio/pages/p20.jpg",
-          "/portfolio/pages/p21.jpg",
-          "/portfolio/pages/p22.jpg",
+          "/portfolio/wenxin-tutor/01.svg",
+          "/portfolio/wenxin-tutor/02.svg",
+          "/portfolio/wenxin-tutor/03.svg",
+          "/portfolio/wenxin-tutor/04.svg",
+          "/portfolio/wenxin-tutor/05.svg",
         ],
       },
       {
-        eyebrow: "02 / THINKING",
-        title: "把 AI 的思考变得可理解",
+        eyebrow: "02 / INTELLIGENT INTERACTION",
+        title: "让智能交互过程清晰可控",
         description:
-          "围绕思考过程、加载反馈和结果呈现建立统一节奏。用户能够理解系统正在做什么、为什么需要等待，以及下一步可以如何继续。",
-        images: ["/portfolio/pages/p23.jpg", "/portfolio/pages/p24.jpg", "/portfolio/pages/p25.jpg"],
+          "围绕提问、思考、生成与结果反馈建立一致的交互节奏，减少 AI 过程中的不确定感。用户能够理解系统正在做什么、为什么需要等待，并在每一步获得明确的继续路径与可恢复操作。",
+        galleryStyle: "contained",
+        images: [
+          "/portfolio/wenxin-tutor/06.svg",
+          "/portfolio/wenxin-tutor/07.svg",
+          "/portfolio/wenxin-tutor/08.svg",
+          "/portfolio/wenxin-tutor/09.svg",
+          "/portfolio/wenxin-tutor/10.svg",
+        ],
       },
       {
-        eyebrow: "03 / CONVERSATION",
-        title: "从聊天到持续学习闭环",
+        eyebrow: "03 / LEARNING LOOP",
+        title: "从一次问答到持续学习闭环",
         description:
-          "补全语音形态、长对话、图片保存、入口引导及与 AI 助手协同的细节，让一次问答自然沉淀为可回看、可继续的学习资料。",
+          "将对话、语音、图片与学习资料组织为可回看、可继续的学习记录，并通过入口引导与跨场景衔接支持后续任务。让每一次提问不止解决当下问题，也能沉淀为长期可复用的学习资产。",
+        galleryStyle: "contained",
         images: [
-          "/portfolio/pages/p26.jpg",
-          "/portfolio/pages/p27.jpg",
-          "/portfolio/pages/p28.jpg",
-          "/portfolio/pages/p29.jpg",
-          "/portfolio/pages/p30.jpg",
+          "/portfolio/wenxin-tutor/11.svg",
+          "/portfolio/wenxin-tutor/12.svg",
+          "/portfolio/wenxin-tutor/13.svg",
+          "/portfolio/wenxin-tutor/14.svg",
+          "/portfolio/wenxin-tutor/15.svg",
         ],
       },
     ],
@@ -201,25 +240,45 @@ export const projects: Project[] = [
     scope: "视觉概念、图标规范、等级命名、权益卡片、购买页设计",
     sections: [
       {
-        eyebrow: "01 / LANGUAGE",
-        title: "从等级数字到身份表达",
+        eyebrow: "MEMBER EXPERIENCE SYSTEM",
+        title: "会员权益体验与视觉系统",
         description:
-          "新的会员语言以星体、节奏与旋律为灵感，通过更具记忆点的等级命名和差异化色彩，为成长体系建立统一的叙事基础。",
-        images: ["/portfolio/pages/p31.jpg", "/portfolio/pages/p32.jpg", "/portfolio/pages/p34.jpg"],
-      },
-      {
-        eyebrow: "02 / SYSTEM",
-        title: "建立可扩展的视觉资产",
-        description:
-          "以统一几何母体规范图标、勋章和等级资产，在保持识别度的同时，为后续会员权益和更多业务场景预留扩展空间。",
-        images: ["/portfolio/pages/p33.jpg", "/portfolio/pages/p35.jpg", "/portfolio/pages/p37.jpg"],
-      },
-      {
-        eyebrow: "03 / APPLICATION",
-        title: "让会员价值在关键场景被看见",
-        description:
-          "将新视觉系统落地到购买页、等级卡片与完整页面矩阵中，利用头图氛围、层级关系和权益信息强化用户的第一印象与升级意愿。",
-        images: ["/portfolio/pages/p36.jpg", "/portfolio/pages/p38.jpg"],
+          "从权益展示、价值感知与福利传达到购买转化、购后承接和临期召回，完整呈现会员体验链路；同时沉淀图标规范、等级差异化与标题字体设计，建立统一且可扩展的会员视觉语言。",
+        galleryStyle: "contained",
+        images: [
+          "/portfolio/member-redesign/00-process-01.svg",
+          "/portfolio/member-redesign/00-process-02.svg",
+          "/portfolio/member-redesign/00-process-03.svg",
+          "/portfolio/member-redesign/00-process-04.svg",
+          "/portfolio/member-redesign/00-process-05.svg",
+          "/portfolio/member-redesign/00-process-06.svg",
+          "/portfolio/member-redesign/00-process-07.svg",
+          "/portfolio/member-redesign/00-process-08.svg",
+          "/portfolio/member-redesign/01-middle-09.svg",
+          "/portfolio/member-redesign/01-middle-10.svg",
+          "/portfolio/member-redesign/01-middle-11.svg",
+          "/portfolio/member-redesign/01-middle-12.svg",
+          "/portfolio/member-redesign/01-middle-13.svg",
+          "/portfolio/member-redesign/01-middle-14.svg",
+          "/portfolio/member-redesign/01-middle-15.svg",
+          "/portfolio/member-redesign/01-middle-16.svg",
+          "/portfolio/member-redesign/01-middle-17.svg",
+          "/portfolio/member-redesign/01-middle-18.svg",
+          "/portfolio/member-redesign/01-middle-19.svg",
+          "/portfolio/member-redesign/01-middle-20.svg",
+          "/portfolio/member-redesign/10-followup-21.svg",
+          "/portfolio/member-redesign/10-followup-22.svg",
+          "/portfolio/member-redesign/10-followup-23.svg",
+          "/portfolio/member-redesign/10-followup-24.svg",
+          "/portfolio/member-redesign/10-followup-25.svg",
+          "/portfolio/member-redesign/10-followup-26.svg",
+          "/portfolio/member-redesign/10-followup-27.svg",
+          "/portfolio/member-redesign/10-followup-28.svg",
+          "/portfolio/member-redesign/10-followup-29.svg",
+          "/portfolio/member-redesign/10-followup-30.svg",
+          "/portfolio/member-redesign/10-followup-31.svg",
+          "/portfolio/member-redesign/10-followup-32.svg",
+        ],
       },
     ],
   },

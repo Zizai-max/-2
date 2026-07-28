@@ -30,13 +30,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       <section className="case-hero">
         <div className="case-hero-bg">
-          <img src={project.coverImage} alt="" aria-hidden="true" />
+          {project.slug !== "ai-application" ? <img src={project.coverImage} alt="" aria-hidden="true" /> : null}
         </div>
         <div className="case-hero-shade" />
         <div className="case-hero-inner shell">
           <div className="case-breadcrumb">
             <Link href="/#work">← ALL PROJECTS</Link>
-            <span>{project.number} / 04</span>
+            {project.slug !== "member-redesign" ? <span>{project.number} / 04</span> : null}
           </div>
           <div className="case-title-block">
             <p>{project.category}</p>
@@ -84,19 +84,19 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       <div className="case-sections">
         {project.sections.map((section, sectionIndex) => (
-          <section className="case-section" key={section.eyebrow}>
+          <section className="case-section" key={`${section.title}-${sectionIndex}`}>
             <div className="case-section-head shell">
-              <p className="orange-kicker">{section.eyebrow}</p>
+              {section.eyebrow ? <p className="orange-kicker">{section.eyebrow}</p> : <span aria-hidden="true" />}
               <h2>{section.title}</h2>
               <p>{section.description}</p>
             </div>
-            <div className={`case-gallery shell gallery-${Math.min(section.images.length, 3)}${project.galleryStyle ? ` gallery-${project.galleryStyle}` : ""}`}>
+            <div className={`case-gallery shell gallery-${Math.min(section.images.length, 3)}${section.galleryStyle || project.galleryStyle ? ` gallery-${section.galleryStyle ?? project.galleryStyle}` : ""}`}>
               {section.images.map((image, imageIndex) => (
                 <figure
-                  className={imageIndex === 0 && section.images.length > 2 ? "gallery-featured" : ""}
+                  className={`${imageIndex === 0 && section.images.length > 2 && section.galleryStyle !== "three-up" ? "gallery-featured" : ""}${section.galleryStyle === "three-up" ? ` ai-visual-card ai-mask-${String(imageIndex + 1).padStart(2, "0")}` : ""}`}
                   key={image}
                 >
-                  <img src={image} alt={`${project.title} - ${section.title}设计展示 ${imageIndex + 1}`} />
+                  <img loading="lazy" src={image} alt={`${project.title} - ${section.title}设计展示 ${imageIndex + 1}`} />
                   <figcaption>{String(sectionIndex + 1).padStart(2, "0")}.{String(imageIndex + 1).padStart(2, "0")}</figcaption>
                 </figure>
               ))}

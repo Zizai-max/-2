@@ -158,9 +158,11 @@ export default function Home() {
           <div className="home-contact-links">
             <div className="footer-contact-stack">
               <a href="mailto:3495386475@qq.com"><span><small>邮箱</small>3495386475@qq.com</span><b>↗</b></a>
-              <p><span><small>微信</small>3495386475</span><b>＋</b></p>
+              <p><span><small>微信 / 手机</small>15755860966</span><b>＋</b></p>
             </div>
-            <a href="#top">返回首页 <b>↑</b></a>
+            <a href="/downloads/zhu-xingmeng-resume.png" download="朱星梦-产品设计师简历.png">
+              下载简历 <b>↓</b>
+            </a>
           </div>
           <div className="footer-meta">
             <span>朱星梦 · UX/UI DESIGNER</span>

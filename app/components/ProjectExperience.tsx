@@ -82,13 +82,17 @@ export function ProjectExperience() {
         >
           <div className="viewer-toolbar">
             <button type="button" onClick={() => setActiveIndex(null)} aria-label="返回项目入口">← 返回项目入口</button>
-            <span>{activeProject.number} / {String(projects.length).padStart(2, "0")} · PROJECT VIEW</span>
+            {activeProject.slug !== "member-redesign" ? (
+              <span>{activeProject.number} / {String(projects.length).padStart(2, "0")} · PROJECT VIEW</span>
+            ) : <span />}
             <button type="button" onClick={() => setActiveIndex(null)} aria-label="关闭项目详情">CLOSE ×</button>
           </div>
 
           <div className="viewer-scroll">
             <section className="viewer-hero">
-              <img className="viewer-hero-image" src={activeProject.coverImage} alt="" aria-hidden="true" />
+              {activeProject.slug !== "ai-application" ? (
+                <img className="viewer-hero-image" src={activeProject.coverImage} alt="" aria-hidden="true" />
+              ) : null}
               <div className="viewer-hero-shade" />
               <div className="viewer-hero-inner shell">
                 <p>{activeProject.category}</p>
@@ -130,16 +134,19 @@ export function ProjectExperience() {
             ) : null}
 
             {activeProject.sections.map((section, sectionIndex) => (
-              <section className="viewer-section" key={section.eyebrow}>
+              <section className="viewer-section" key={`${section.title}-${sectionIndex}`}>
                 <div className="viewer-section-head shell">
-                  <p className="orange-kicker">{section.eyebrow}</p>
+                  {section.eyebrow ? <p className="orange-kicker">{section.eyebrow}</p> : <span aria-hidden="true" />}
                   <h3>{section.title}</h3>
                   <p>{section.description}</p>
                 </div>
-                <div className={`viewer-gallery shell${activeProject.galleryStyle ? ` gallery-${activeProject.galleryStyle}` : ""}`}>
+                <div className={`viewer-gallery shell${section.galleryStyle || activeProject.galleryStyle ? ` gallery-${section.galleryStyle ?? activeProject.galleryStyle}` : ""}`}>
                   {section.images.map((image, imageIndex) => (
-                    <figure className={imageIndex === 0 && section.images.length > 2 ? "viewer-featured" : ""} key={image}>
-                      <img src={image} alt={`${activeProject.title} - ${section.title} ${imageIndex + 1}`} />
+                    <figure
+                      className={`${imageIndex === 0 && section.images.length > 2 && section.galleryStyle !== "three-up" ? "viewer-featured" : ""}${section.galleryStyle === "three-up" ? ` ai-visual-card ai-mask-${String(imageIndex + 1).padStart(2, "0")}` : ""}`}
+                      key={image}
+                    >
+                      <img loading="lazy" src={image} alt={`${activeProject.title} - ${section.title} ${imageIndex + 1}`} />
                       <figcaption>{String(sectionIndex + 1).padStart(2, "0")}.{String(imageIndex + 1).padStart(2, "0")}</figcaption>
                     </figure>
                   ))}
