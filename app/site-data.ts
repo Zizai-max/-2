@@ -113,7 +113,7 @@ export const projects: Project[] = [
         title: "粉丝成长与签到激励体系升级",
         description:
           "将前期研究结论收束为完整方案，从任务驱动的送花行为出发，重构成长等级、签到反馈与长期关系维护机制，形成更可持续的粉丝体验系统。",
-        images: ["/portfolio/fan-growth/05-fan-growth-system.svg"],
+        images: ["/portfolio/fan-growth/05-fan-growth-system.png"],
       },
       {
         eyebrow: "05 / GROWTH PATH",
