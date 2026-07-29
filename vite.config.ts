@@ -1,3 +1,4 @@
+// Trigger Cloudflare deployment
 import vinext from "vinext";
 import { defineConfig } from "vite";
 
