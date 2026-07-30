@@ -1,6 +1,7 @@
 import { SiteHeader } from "./components/SiteHeader";
 import { ProjectExperience } from "./components/ProjectExperience";
 import SplashCursor from "./components/SplashCursor";
+import { withBasePath } from "./base-path";
 
 const capabilities = ["用户研究", "体验策略", "交互设计", "视觉系统", "移动端 / iPad / Web 适配"];
 
@@ -17,7 +18,7 @@ export default function Home() {
           loop
           playsInline
           preload="metadata"
-          poster="/portfolio/pages/p01.jpg"
+          poster={withBasePath("/portfolio/pages/p01.jpg")}
           aria-hidden="true"
         >
           <source
@@ -74,7 +75,7 @@ export default function Home() {
         <div className="profile-layout shell">
           <figure className="portfolio-portrait">
             <div className="portrait-frame">
-              <img src="/portfolio/portrait.jpg" alt="朱星梦个人肖像" />
+              <img src={withBasePath("/portfolio/portrait.jpg")} alt="朱星梦个人肖像" />
             </div>
             <figcaption>PORTRAIT · 2026</figcaption>
           </figure>
@@ -160,7 +161,7 @@ export default function Home() {
               <a href="mailto:3495386475@qq.com"><span><small>邮箱</small>3495386475@qq.com</span><b>↗</b></a>
               <p><span><small>微信 / 手机</small>15755860966</span><b>＋</b></p>
             </div>
-            <a href="/downloads/zhu-xingmeng-resume.png" download="朱星梦-产品设计师简历.png">
+            <a href={withBasePath("/downloads/zhu-xingmeng-resume.png")} download="朱星梦-产品设计师简历.png">
               下载简历 <b>↓</b>
             </a>
           </div>

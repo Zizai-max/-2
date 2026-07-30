@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { withBasePath } from "../../base-path";
 import { SiteHeader } from "../../components/SiteHeader";
 import { getProject, projects } from "../../site-data";
 
@@ -30,7 +31,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       <section className="case-hero">
         <div className="case-hero-bg">
-          {project.slug !== "ai-application" ? <img src={project.coverImage} alt="" aria-hidden="true" /> : null}
+          {project.slug !== "ai-application" ? <img src={withBasePath(project.coverImage)} alt="" aria-hidden="true" /> : null}
         </div>
         <div className="case-hero-shade" />
         <div className="case-hero-inner shell">
@@ -96,7 +97,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                   className={`${imageIndex === 0 && section.images.length > 2 && section.galleryStyle !== "three-up" ? "gallery-featured" : ""}${section.galleryStyle === "three-up" ? ` ai-visual-card ai-mask-${String(imageIndex + 1).padStart(2, "0")}` : ""}`}
                   key={image}
                 >
-                  <img loading="lazy" src={image} alt={`${project.title} - ${section.title}设计展示 ${imageIndex + 1}`} />
+                  <img loading="lazy" src={withBasePath(image)} alt={`${project.title} - ${section.title}设计展示 ${imageIndex + 1}`} />
                   <figcaption>{String(sectionIndex + 1).padStart(2, "0")}.{String(imageIndex + 1).padStart(2, "0")}</figcaption>
                 </figure>
               ))}

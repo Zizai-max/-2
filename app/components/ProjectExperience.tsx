@@ -2,6 +2,7 @@
 
 import type { CSSProperties } from "react";
 import { useEffect, useState } from "react";
+import { withBasePath } from "../base-path";
 import { projects } from "../site-data";
 import BorderGlow from "./BorderGlow";
 
@@ -42,7 +43,7 @@ export function ProjectExperience() {
           >
             <button className="project-entry" type="button" onClick={() => openProject(index)}>
               <div className="entry-image">
-                <img src={project.coverImage} alt="" aria-hidden="true" />
+                <img src={withBasePath(project.coverImage)} alt="" aria-hidden="true" />
                 <span className="entry-overlay" />
               </div>
               <span className={`entry-copy${project.workflowGroups ? " entry-copy-workflow" : ""}`}>
@@ -91,7 +92,7 @@ export function ProjectExperience() {
           <div className="viewer-scroll">
             <section className="viewer-hero">
               {activeProject.slug !== "ai-application" ? (
-                <img className="viewer-hero-image" src={activeProject.coverImage} alt="" aria-hidden="true" />
+                <img className="viewer-hero-image" src={withBasePath(activeProject.coverImage)} alt="" aria-hidden="true" />
               ) : null}
               <div className="viewer-hero-shade" />
               <div className="viewer-hero-inner shell">
@@ -146,7 +147,7 @@ export function ProjectExperience() {
                       className={`${imageIndex === 0 && section.images.length > 2 && section.galleryStyle !== "three-up" ? "viewer-featured" : ""}${section.galleryStyle === "three-up" ? ` ai-visual-card ai-mask-${String(imageIndex + 1).padStart(2, "0")}` : ""}`}
                       key={image}
                     >
-                      <img loading="lazy" src={image} alt={`${activeProject.title} - ${section.title} ${imageIndex + 1}`} />
+                      <img loading="lazy" src={withBasePath(image)} alt={`${activeProject.title} - ${section.title} ${imageIndex + 1}`} />
                       <figcaption>{String(sectionIndex + 1).padStart(2, "0")}.{String(imageIndex + 1).padStart(2, "0")}</figcaption>
                     </figure>
                   ))}

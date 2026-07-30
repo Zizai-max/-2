@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { withBasePath } from "../base-path";
 
 type SiteHeaderProps = {
   variant?: "overlay" | "solid";
@@ -29,7 +30,7 @@ export function SiteHeader({ variant = "overlay" }: SiteHeaderProps) {
           <p>CONTACT</p>
           <a href="mailto:3495386475@qq.com"><small>邮箱</small><span>3495386475@qq.com</span></a>
           <div><small>微信 / 手机</small><span>15755860966</span></div>
-          <a className="contact-resume" href="/downloads/zhu-xingmeng-resume.png" download="朱星梦-产品设计师简历.png">
+          <a className="contact-resume" href={withBasePath("/downloads/zhu-xingmeng-resume.png")} download="朱星梦-产品设计师简历.png">
             <small>RESUME</small><span>下载简历 ↓</span>
           </a>
         </div>
