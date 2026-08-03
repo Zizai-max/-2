@@ -42,6 +42,10 @@ export function ProjectExperience() {
             animated={index === 0}
           >
             <button className="project-entry" type="button" onClick={() => openProject(index)}>
+              <span className="entry-image">
+                <img src={withBasePath(project.coverImage)} alt="" aria-hidden="true" />
+                <span className="entry-overlay" />
+              </span>
               <span className={`entry-copy${project.workflowGroups ? " entry-copy-workflow" : ""}`}>
                 <span className="entry-meta">
                   <span className="entry-number">{project.number} / {project.year}</span>
@@ -70,10 +74,6 @@ export function ProjectExperience() {
                   </span>
                 ) : null}
                 <span className="entry-arrow" aria-hidden="true">↗</span>
-              </span>
-              <span className="entry-image">
-                <img src={withBasePath(project.coverImage)} alt="" aria-hidden="true" />
-                <span className="entry-overlay" />
               </span>
             </button>
           </BorderGlow>
