@@ -42,16 +42,19 @@ export function ProjectExperience() {
             animated={index === 0}
           >
             <button className="project-entry" type="button" onClick={() => openProject(index)}>
-              <div className="entry-image">
-                <img src={withBasePath(project.coverImage)} alt="" aria-hidden="true" />
-                <span className="entry-overlay" />
-              </div>
               <span className={`entry-copy${project.workflowGroups ? " entry-copy-workflow" : ""}`}>
-                <span className="entry-number">{project.number} / {project.year}</span>
-                <span className="entry-text">
+                <span className="entry-meta">
+                  <span className="entry-number">{project.number} / {project.year}</span>
                   <span className="entry-category">{project.category}</span>
+                </span>
+                <span className="entry-text">
                   <strong>{project.title}</strong>
-                  <span>{project.englishTitle}</span>
+                  <span className="entry-english-title">{project.englishTitle}</span>
+                  <span className="entry-description">{project.intro}</span>
+                </span>
+                <span className="entry-project-details">
+                  <b>{project.role}</b>
+                  <span>{project.scope}</span>
                 </span>
                 {project.workflowGroups ? (
                   <span className="entry-workflow">
@@ -67,6 +70,10 @@ export function ProjectExperience() {
                   </span>
                 ) : null}
                 <span className="entry-arrow" aria-hidden="true">↗</span>
+              </span>
+              <span className="entry-image">
+                <img src={withBasePath(project.coverImage)} alt="" aria-hidden="true" />
+                <span className="entry-overlay" />
               </span>
             </button>
           </BorderGlow>
