@@ -30,6 +30,10 @@ test("static export renders the current portfolio homepage", async () => {
   assert.match(html, /id="work"/);
   assert.match(html, /id="thanks"/);
   assert.equal((html.match(/\bproject-glow\b/g) ?? []).length, 4);
+  assert.match(html, /\/portfolio\/pages\/ai-workflow-cover-2026\.jpg/);
+  assert.match(html, /\/portfolio\/pages\/member-badge-cover-2026\.png/);
+  assert.doesNotMatch(html, /\/portfolio\/pages\/p18\.jpg/);
+  assert.doesNotMatch(html, /\/portfolio\/pages\/p32\.jpg/);
   assert.doesNotMatch(html, /react-loading-skeleton|Your site is taking shape|Codex is working/i);
 });
 
@@ -103,7 +107,12 @@ test("fan-benefits gallery renders the supplied image sequence within the contai
     "/portfolio/fan-benefits/2026/18.png",
     "/portfolio/fan-benefits/2026/19.png",
   ];
+  const explorationPaths = Array.from(
+    { length: 13 },
+    (_, index) => `/portfolio/fan-growth/ai-ui-exploration/visual-${String(index + 1).padStart(2, "0")}.png`,
+  );
 
-  assertImageOrder(html, imagePaths);
+  assertImageOrder(html, [...imagePaths, ...explorationPaths]);
   assert.match(html, /case-gallery shell gallery-3 gallery-contained/);
+  assert.match(html, /case-gallery shell gallery-3 gallery-three-up/);
 });
