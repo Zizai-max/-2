@@ -36,7 +36,7 @@ export const projects: Project[] = [
     category: "AI 应用 / 智能交互 / 产品体验",
     year: "2026",
     accent: "#b58cff",
-    coverImage: "/portfolio/pages/p18.jpg",
+    coverImage: "/portfolio/pages/ai-workflow-cover-2026.jpg",
     intro:
       "围绕 AI 学习应用的首页体验，探索人格化角色、任务推荐与多模态提问的组合方式，让智能能力以更轻松、更易理解的方式进入真实学习场景。",
     role: "UX / UI Designer",
@@ -116,6 +116,28 @@ export const projects: Project[] = [
           "/portfolio/fan-benefits/2026/19.png",
         ],
       },
+      {
+        eyebrow: "08 / AI VISUAL EXPLORATION",
+        title: "AI探索UI视觉设计",
+        description:
+          "围绕粉丝成长、签到激励与长期关系建立，使用 AI 并行探索不同的界面视觉方向。从任务成长、陪伴叙事到游戏化与数据反馈，在统一业务目标下比较信息密度、情感氛围与激励感知，辅助最终视觉判断。",
+        galleryStyle: "three-up",
+        images: [
+          "/portfolio/fan-growth/ai-ui-exploration/visual-01.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-02.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-03.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-04.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-05.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-06.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-07.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-08.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-09.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-10.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-11.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-12.png",
+          "/portfolio/fan-growth/ai-ui-exploration/visual-13.png",
+        ],
+      },
     ],
   },
   {
@@ -184,7 +206,7 @@ export const projects: Project[] = [
     category: "会员体系 / 视觉系统 / 品牌体验",
     year: "2026",
     accent: "#ff713f",
-    coverImage: "/portfolio/pages/p32.jpg",
+    coverImage: "/portfolio/pages/member-badge-cover-2026.png",
     intro:
       "以“闪亮新星”为核心概念，重新定义会员等级、勋章、权益卡片与购买页面的视觉语言，让成长身份更鲜明、会员价值更可感知。",
     role: "UX / UI Designer",
