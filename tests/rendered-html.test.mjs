@@ -8,6 +8,17 @@ function readOutput(path) {
   return readFile(new URL(path, outputRoot), "utf8");
 }
 
+function assertImageOrder(html, paths) {
+  let previousIndex = -1;
+
+  paths.forEach((path) => {
+    const currentIndex = html.indexOf(path);
+    assert.notEqual(currentIndex, -1, `missing image path: ${path}`);
+    assert.ok(currentIndex > previousIndex, `image path is out of order: ${path}`);
+    previousIndex = currentIndex;
+  });
+}
+
 test("static export renders the current portfolio homepage", async () => {
   const html = await readOutput("index.html");
 
@@ -49,4 +60,50 @@ test("static export includes the thanks page and all project detail routes", asy
     assert.match(html, new RegExp(projectTitles[index]));
     assert.doesNotMatch(html, /react-loading-skeleton|Your site is taking shape|Codex is working/i);
   });
+});
+
+test("AI gallery renders the supplied image sequence within the contained layout", async () => {
+  const html = await readOutput("projects/ai-application/index.html");
+  const imagePaths = [
+    "/portfolio/ai-application/2026/01.png",
+    "/portfolio/ai-application/2026/02.png",
+    "/portfolio/ai-application/2026/03.png",
+    "/portfolio/ai-application/2026/04.png",
+    "/portfolio/ai-application/2026/05.png",
+    "/portfolio/ai-application/2026/06.png",
+    "/portfolio/ai-application/2026/07.png",
+    "/portfolio/ai-application/2026/08.png",
+    "/portfolio/ai-application/2026/09.png",
+  ];
+
+  assertImageOrder(html, imagePaths);
+  assert.match(html, /case-gallery shell gallery-3 gallery-contained/);
+});
+
+test("fan-benefits gallery renders the supplied image sequence within the contained layout", async () => {
+  const html = await readOutput("projects/fan-benefits/index.html");
+  const imagePaths = [
+    "/portfolio/fan-benefits/2026/01.png",
+    "/portfolio/fan-benefits/2026/02.png",
+    "/portfolio/fan-benefits/2026/03.png",
+    "/portfolio/fan-benefits/2026/04.png",
+    "/portfolio/fan-benefits/2026/05.png",
+    "/portfolio/fan-benefits/2026/06.png",
+    "/portfolio/fan-benefits/2026/07.png",
+    "/portfolio/fan-benefits/2026/08.png",
+    "/portfolio/fan-benefits/2026/09.png",
+    "/portfolio/fan-benefits/2026/10.png",
+    "/portfolio/fan-benefits/2026/11.png",
+    "/portfolio/fan-benefits/2026/12.png",
+    "/portfolio/fan-benefits/2026/13.png",
+    "/portfolio/fan-benefits/2026/14.png",
+    "/portfolio/fan-benefits/2026/15.png",
+    "/portfolio/fan-benefits/2026/16.png",
+    "/portfolio/fan-benefits/2026/17.png",
+    "/portfolio/fan-benefits/2026/18.png",
+    "/portfolio/fan-benefits/2026/19.png",
+  ];
+
+  assertImageOrder(html, imagePaths);
+  assert.match(html, /case-gallery shell gallery-3 gallery-contained/);
 });
