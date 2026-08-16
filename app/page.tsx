@@ -11,21 +11,12 @@ export default function Home() {
       <SiteHeader />
 
       <section className="home-hero" id="top" aria-labelledby="hero-title">
-        <video
-          className="hero-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster={withBasePath("/portfolio/pages/p01.jpg")}
+        <img
+          className="hero-background"
+          src={withBasePath("/portfolio/pages/home-hero-background-2026.png")}
+          alt=""
           aria-hidden="true"
-        >
-          <source
-            src="https://videos.pexels.com/video-files/3130284/3130284-hd_1920_1080_25fps.mp4"
-            type="video/mp4"
-          />
-        </video>
+        />
         <div className="hero-darken" />
         <SplashCursor
           DYE_RESOLUTION={720}

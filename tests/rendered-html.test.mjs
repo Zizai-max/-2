@@ -26,6 +26,9 @@ test("static export renders the current portfolio homepage", async () => {
   assert.match(html, /class="site-header/);
   assert.match(html, /aria-label="主导航"/);
   assert.match(html, /class="portfolio-title"/);
+  assert.match(html, /class="hero-background"/);
+  assert.match(html, /\/portfolio\/pages\/home-hero-background-2026\.png/);
+  assert.doesNotMatch(html, /<video\b|videos\.pexels\.com\/video-files\/3130284/i);
   assert.match(html, /id="about"/);
   assert.match(html, /id="work"/);
   assert.match(html, /id="thanks"/);
