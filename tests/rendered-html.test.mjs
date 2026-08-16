@@ -29,6 +29,14 @@ test("static export renders the current portfolio homepage", async () => {
   assert.match(html, /class="hero-background"/);
   assert.match(html, /\/portfolio\/pages\/home-hero-background-2026\.png/);
   assert.doesNotMatch(html, /<video\b|videos\.pexels\.com\/video-files\/3130284/i);
+  assert.match(html, /class="hero-composition"/);
+  assert.match(html, /移动端增长体验与视觉系统设计/);
+  assert.match(html, /用户体验设计师/);
+  assert.match(html, /class="hero-projects"/);
+  assert.match(html, /百度粉丝成长与签到激励体系/);
+  assert.match(html, /百度AI伴学文心老师/);
+  assert.match(html, /会员勋章重构设计/);
+  assert.doesNotMatch(html, /class="hero-statement"|<p class="hero-cn">移动端产品体验|BAIDU EXPERIENCE DESIGN/);
   assert.match(html, /id="about"/);
   assert.match(html, /id="work"/);
   assert.match(html, /id="thanks"/);

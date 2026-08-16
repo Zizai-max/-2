@@ -34,27 +34,30 @@ export default function Home() {
         <div className="home-hero-inner shell">
           <div className="hero-topline">
             <span>DESIGN PORTFOLIO</span>
-            <span>2026</span>
           </div>
           <h1 id="hero-title" className="portfolio-title" aria-label="Portfolio">
-            <span>PORT</span>
-            <span className="portfolio-cut">FOLIO</span>
+            <span>PORTFOLIO</span>
           </h1>
-          <div className="hero-statement">
-            <div>
-              <p className="hero-cn">移动端产品体验</p>
-              <p className="hero-cn">与视觉界面</p>
-            </div>
-            <div className="hero-person">
-              <strong>朱星梦</strong>
-              <span>UX / UI DESIGNER</span>
+          <div className="hero-composition">
+            <p className="hero-cn">移动端增长体验与视觉系统设计</p>
+            <div className="hero-role-list">
+              <div>
+                <span>用户体验设计师</span>
+                <strong>UX Designer</strong>
+              </div>
+              <div>
+                <span>作品集</span>
+                <strong>Portfolio</strong>
+              </div>
+              <p><span>UX</span><span>UI</span></p>
             </div>
           </div>
-          <div className="hero-footerline">
-            <span>BAIDU EXPERIENCE DESIGN</span>
-            <a href="#about">SCROLL TO DISCOVER <b>↓</b></a>
-            <span>CHANGCHUN · SHANGHAI</span>
-          </div>
+          <nav className="hero-projects" aria-label="首页项目入口">
+            <span>项目设计</span>
+            <a href={withBasePath("/projects/fan-benefits")}>百度粉丝成长与签到激励体系</a>
+            <a href={withBasePath("/projects/wenxin-tutor")}>百度AI伴学文心老师</a>
+            <a href={withBasePath("/projects/member-redesign")}>会员勋章重构设计</a>
+          </nav>
         </div>
       </section>
 
