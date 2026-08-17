@@ -151,9 +151,21 @@ export default function Home() {
           <p className="orange-kicker">END OF PORTFOLIO · 2026</p>
           <h2 id="contact-title">THANK<br /><span>YOU.</span></h2>
           <div className="home-contact-links">
-            <div className="footer-contact-stack">
-              <a href="mailto:3495386475@qq.com"><span><small>邮箱</small>3495386475@qq.com</span><b>↗</b></a>
-              <p><span><small>微信 / 手机</small>15755860966</span><b>＋</b></p>
+            <div className="footer-contact-panel">
+              <div className="footer-contact-stack">
+                <a href="mailto:3495386475@qq.com"><span><small>邮箱</small>3495386475@qq.com</span></a>
+                <p><span><small>微信 / 手机</small>15755860966</span></p>
+              </div>
+              <figure className="contact-qr">
+                <img
+                  src={withBasePath("/portfolio/pages/wechat-contact-qr.png")}
+                  alt="微信二维码"
+                  width="162"
+                  height="162"
+                  loading="lazy"
+                />
+                <figcaption>扫码添加微信</figcaption>
+              </figure>
             </div>
             <a href={withBasePath("/downloads/zhu-xingmeng-resume.png")} download="朱星梦-产品设计师简历.png">
               下载简历 <b>↓</b>

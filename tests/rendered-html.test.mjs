@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const outputRoot = new URL("../out/", import.meta.url);
+const globalStylesheet = new URL("../app/globals.css", import.meta.url);
 
 function readOutput(path) {
   return readFile(new URL(path, outputRoot), "utf8");
@@ -43,9 +44,18 @@ test("static export renders the current portfolio homepage", async () => {
   assert.equal((html.match(/\bproject-glow\b/g) ?? []).length, 4);
   assert.match(html, /\/portfolio\/pages\/ai-workflow-cover-2026\.jpg/);
   assert.match(html, /\/portfolio\/pages\/member-badge-cover-2026\.png/);
+  assert.match(html, /\/portfolio\/pages\/wechat-contact-qr\.png/);
+  assert.match(html, /alt="微信二维码"/);
+  assert.match(html, /\/downloads\/zhu-xingmeng-resume\.png/);
   assert.doesNotMatch(html, /\/portfolio\/pages\/p18\.jpg/);
   assert.doesNotMatch(html, /\/portfolio\/pages\/p32\.jpg/);
   assert.doesNotMatch(html, /react-loading-skeleton|Your site is taking shape|Codex is working/i);
+});
+
+test("global page shell prevents horizontal viewport scrolling", async () => {
+  const css = await readFile(globalStylesheet, "utf8");
+
+  assert.match(css, /html,\s*body\s*\{[^}]*overflow-x:\s*hidden;/s);
 });
 
 test("static export includes the thanks page and all project detail routes", async () => {
