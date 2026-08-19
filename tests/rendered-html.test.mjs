@@ -28,7 +28,7 @@ test("static export renders the current portfolio homepage", async () => {
   assert.match(html, /aria-label="主导航"/);
   assert.match(html, /class="portfolio-title"/);
   assert.match(html, /class="hero-background"/);
-  assert.match(html, /\/portfolio\/pages\/home-hero-background-2026\.png/);
+  assert.match(html, /\/portfolio\/pages\/home-hero-background-2026\.webp/);
   assert.doesNotMatch(html, /<video\b|videos\.pexels\.com\/video-files\/3130284/i);
   assert.match(html, /class="hero-composition"/);
   assert.match(html, /移动端增长体验与视觉系统设计/);
@@ -43,10 +43,11 @@ test("static export renders the current portfolio homepage", async () => {
   assert.match(html, /id="thanks"/);
   assert.equal((html.match(/\bproject-glow\b/g) ?? []).length, 4);
   assert.match(html, /\/portfolio\/pages\/ai-workflow-cover-2026\.jpg/);
-  assert.match(html, /\/portfolio\/pages\/member-badge-cover-2026\.png/);
+  assert.match(html, /\/portfolio\/pages\/member-badge-cover-2026\.webp/);
   assert.match(html, /\/portfolio\/pages\/wechat-contact-qr\.png/);
   assert.match(html, /alt="微信二维码"/);
-  assert.match(html, /\/downloads\/zhu-xingmeng-resume\.png/);
+  assert.match(html, /class="contact-qr footer-contact-qr"/);
+  assert.doesNotMatch(html, /class="contact-resume"|RESUME|下载简历|\/downloads\/zhu-xingmeng-resume/i);
   assert.doesNotMatch(html, /\/portfolio\/pages\/p18\.jpg/);
   assert.doesNotMatch(html, /\/portfolio\/pages\/p32\.jpg/);
   assert.doesNotMatch(html, /react-loading-skeleton|Your site is taking shape|Codex is working/i);
@@ -90,50 +91,64 @@ test("static export includes the thanks page and all project detail routes", asy
 test("AI gallery renders the supplied image sequence within the contained layout", async () => {
   const html = await readOutput("projects/ai-application/index.html");
   const imagePaths = [
-    "/portfolio/ai-application/2026/01.png",
-    "/portfolio/ai-application/2026/02.png",
-    "/portfolio/ai-application/2026/03.png",
-    "/portfolio/ai-application/2026/04.png",
-    "/portfolio/ai-application/2026/05.png",
-    "/portfolio/ai-application/2026/06.png",
-    "/portfolio/ai-application/2026/07.png",
-    "/portfolio/ai-application/2026/08.png",
-    "/portfolio/ai-application/2026/09.png",
+    "/portfolio/ai-application/2026/01.webp",
+    "/portfolio/ai-application/2026/02.webp",
+    "/portfolio/ai-application/2026/03.webp",
+    "/portfolio/ai-application/2026/04.webp",
+    "/portfolio/ai-application/2026/05.webp",
+    "/portfolio/ai-application/2026/06.webp",
+    "/portfolio/ai-application/2026/07.webp",
+    "/portfolio/ai-application/2026/08.webp",
+    "/portfolio/ai-application/2026/09.webp",
   ];
 
   assertImageOrder(html, imagePaths);
   assert.match(html, /case-gallery shell gallery-3 gallery-contained/);
+  assert.match(html, /class="case-hero-bg"[^>]*>[\s\S]*\/portfolio\/pages\/ai-workflow-cover-2026\.jpg/);
+  assert.match(html, /fetchPriority="high"|fetchpriority="high"/);
+  assert.match(html, /<source[^>]+type="image\/webp"[^>]+01-800\.webp 800w[^>]+01-1600\.webp 1600w[^>]+01-2400\.webp 2400w/);
+  assert.match(html, /<img[^>]+loading="lazy"[^>]+decoding="async"[^>]+AI Workflow Designer/);
 });
 
 test("fan-benefits gallery renders the supplied image sequence within the contained layout", async () => {
   const html = await readOutput("projects/fan-benefits/index.html");
   const imagePaths = [
-    "/portfolio/fan-benefits/2026/01.png",
-    "/portfolio/fan-benefits/2026/02.png",
-    "/portfolio/fan-benefits/2026/03.png",
-    "/portfolio/fan-benefits/2026/04.png",
-    "/portfolio/fan-benefits/2026/05.png",
-    "/portfolio/fan-benefits/2026/06.png",
-    "/portfolio/fan-benefits/2026/07.png",
-    "/portfolio/fan-benefits/2026/08.png",
-    "/portfolio/fan-benefits/2026/09.png",
-    "/portfolio/fan-benefits/2026/10.png",
-    "/portfolio/fan-benefits/2026/11.png",
-    "/portfolio/fan-benefits/2026/12.png",
-    "/portfolio/fan-benefits/2026/13.png",
-    "/portfolio/fan-benefits/2026/14.png",
-    "/portfolio/fan-benefits/2026/15.png",
-    "/portfolio/fan-benefits/2026/16.png",
-    "/portfolio/fan-benefits/2026/17.png",
-    "/portfolio/fan-benefits/2026/18.png",
-    "/portfolio/fan-benefits/2026/19.png",
+    "/portfolio/fan-benefits/2026/01.webp",
+    "/portfolio/fan-benefits/2026/02.webp",
+    "/portfolio/fan-benefits/2026/03.webp",
+    "/portfolio/fan-benefits/2026/04.webp",
+    "/portfolio/fan-benefits/2026/05.webp",
+    "/portfolio/fan-benefits/2026/06.webp",
+    "/portfolio/fan-benefits/2026/07.webp",
+    "/portfolio/fan-benefits/2026/08.webp",
+    "/portfolio/fan-benefits/2026/09.webp",
+    "/portfolio/fan-benefits/2026/10.webp",
+    "/portfolio/fan-benefits/2026/11.webp",
+    "/portfolio/fan-benefits/2026/12.webp",
+    "/portfolio/fan-benefits/2026/13.webp",
+    "/portfolio/fan-benefits/2026/14.webp",
+    "/portfolio/fan-benefits/2026/15.webp",
+    "/portfolio/fan-benefits/2026/16.webp",
+    "/portfolio/fan-benefits/2026/17.webp",
+    "/portfolio/fan-benefits/2026/18.webp",
+    "/portfolio/fan-benefits/2026/19.webp",
   ];
   const explorationPaths = Array.from(
     { length: 13 },
-    (_, index) => `/portfolio/fan-growth/ai-ui-exploration/visual-${String(index + 1).padStart(2, "0")}.png`,
+    (_, index) => `/portfolio/fan-growth/ai-ui-exploration/visual-${String(index + 1).padStart(2, "0")}.webp`,
   );
 
   assertImageOrder(html, [...imagePaths, ...explorationPaths]);
   assert.match(html, /case-gallery shell gallery-3 gallery-contained/);
   assert.match(html, /case-gallery shell gallery-3 gallery-three-up/);
+  assert.match(html, /<source[^>]+type="image\/webp"[^>]+14-800\.webp 800w[^>]+14-1600\.webp 1600w[^>]+14-2400\.webp 2400w/);
+});
+
+test("project surfaces use restrained neutral lines", async () => {
+  const css = await readFile(globalStylesheet, "utf8");
+
+  assert.match(css, /--color-border:\s*rgba\(214, 204, 196, \.11\)/);
+  assert.match(css, /--color-border-hover:\s*rgba\(214, 204, 196, \.18\)/);
+  assert.match(css, /--viewer-line:\s*rgba\(214, 204, 196, \.1\)/);
+  assert.doesNotMatch(css, /\.gallery-contained figure[^}]+box-shadow:\s*var\(--shadow-card\)/s);
 });

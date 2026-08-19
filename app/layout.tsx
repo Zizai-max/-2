@@ -13,13 +13,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "朱星梦 — UX / UI Designer",
     description: "移动端产品体验与视觉界面 · Portfolio 2026",
-    images: [{ url: withBasePath("/og.png"), width: 1732, height: 909, alt: "朱星梦 UX/UI 设计作品集" }],
+    images: [{ url: withBasePath("/og.webp"), width: 1732, height: 909, alt: "朱星梦 UX/UI 设计作品集" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "朱星梦 — UX / UI Designer",
     description: "Designing beyond the screen.",
-    images: [withBasePath("/og.png")],
+    images: [withBasePath("/og.webp")],
   },
 };
 

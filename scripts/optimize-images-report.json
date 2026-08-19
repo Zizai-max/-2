@@ -1,0 +1,1253 @@
+{
+  "scannedRasterImages": 161,
+  "largeOver200KB": 124,
+  "convertedToWebp": 124,
+  "beforeMB": 293.05,
+  "afterMB": 30.06,
+  "savedMB": 262.99,
+  "savedPercent": 89.7,
+  "largeFiles": [
+    {
+      "rel": "public\\downloads\\zhu-xingmeng-resume.png",
+      "kb": 572
+    },
+    {
+      "rel": "public\\og.png",
+      "kb": 2088
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\01-ux-research-skill.png",
+      "kb": 501
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\02-liblib-image.png",
+      "kb": 884
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\03-vibe-coding.png",
+      "kb": 811
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\04-design-production-workflow.png",
+      "kb": 700
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\05-agent-model.png",
+      "kb": 646
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\01.png",
+      "kb": 5440
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\02.png",
+      "kb": 8261
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\03.png",
+      "kb": 6625
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\04.png",
+      "kb": 6485
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\05.png",
+      "kb": 7446
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\06.png",
+      "kb": 6679
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\07.png",
+      "kb": 3735
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\08.png",
+      "kb": 363
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\09.png",
+      "kb": 499
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\01.png",
+      "kb": 6171
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\02.png",
+      "kb": 5466
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\03.png",
+      "kb": 13212
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\04.png",
+      "kb": 10710
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\05.png",
+      "kb": 10874
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\06.png",
+      "kb": 13860
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\07.png",
+      "kb": 4631
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\08.png",
+      "kb": 9261
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\09.png",
+      "kb": 11293
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\10.png",
+      "kb": 412
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\11.png",
+      "kb": 5037
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\12.png",
+      "kb": 10293
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\13.png",
+      "kb": 4414
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\14.png",
+      "kb": 22547
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\15.png",
+      "kb": 2525
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\16.png",
+      "kb": 4060
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\17.png",
+      "kb": 3735
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\18.png",
+      "kb": 5254
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\19.png",
+      "kb": 6402
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\01-user-scenarios.png",
+      "kb": 1144
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\02-user-journey.png",
+      "kb": 939
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\03-competitor-landscape.png",
+      "kb": 981
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\04-competitor-ux.png",
+      "kb": 1219
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\05-fan-growth-system.png",
+      "kb": 1215
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\06-fan-growth-path.png",
+      "kb": 991
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-fan-followup-01.png",
+      "kb": 875
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-fan-followup-02.png",
+      "kb": 561
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-fan-followup-03.png",
+      "kb": 992
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-fan-followup-04.png",
+      "kb": 2407
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-flower-popup.png",
+      "kb": 734
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-signin-calendar.png",
+      "kb": 968
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\08-other-solutions.png",
+      "kb": 1015
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-01.png",
+      "kb": 1477
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-02.png",
+      "kb": 1394
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-03.png",
+      "kb": 1600
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-04.png",
+      "kb": 1461
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-05.png",
+      "kb": 1450
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-06.png",
+      "kb": 1661
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-07.png",
+      "kb": 1616
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-08.png",
+      "kb": 1375
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-09.png",
+      "kb": 1702
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-10.png",
+      "kb": 1773
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-11.png",
+      "kb": 2047
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-12.png",
+      "kb": 1451
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-13.png",
+      "kb": 1581
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-01.png",
+      "kb": 946
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-02.png",
+      "kb": 276
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-04.png",
+      "kb": 1006
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-05.png",
+      "kb": 1373
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-06.png",
+      "kb": 720
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-07.png",
+      "kb": 328
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-08.png",
+      "kb": 696
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-benefits-overview.png",
+      "kb": 2887
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-09.png",
+      "kb": 1252
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-10.png",
+      "kb": 643
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-11.png",
+      "kb": 787
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-12.png",
+      "kb": 590
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-13.png",
+      "kb": 929
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-14.png",
+      "kb": 499
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-15.png",
+      "kb": 295
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-16.png",
+      "kb": 354
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-17.png",
+      "kb": 426
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-18.png",
+      "kb": 423
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-19.png",
+      "kb": 441
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-20.png",
+      "kb": 546
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\02-value-perception.png",
+      "kb": 1899
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\03-member-benefits.png",
+      "kb": 2101
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\04-conversion.png",
+      "kb": 1813
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\05-post-purchase.png",
+      "kb": 2319
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\06-expiry.png",
+      "kb": 1686
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\07-icon-guidelines.png",
+      "kb": 1382
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\08-tier-differentiation.png",
+      "kb": 1535
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\09-title-type-design.png",
+      "kb": 1591
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-21.png",
+      "kb": 1198
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-22.png",
+      "kb": 4953
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-23.png",
+      "kb": 383
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-24.png",
+      "kb": 808
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-25.png",
+      "kb": 1034
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-26.png",
+      "kb": 2180
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-27.png",
+      "kb": 1281
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-28.png",
+      "kb": 1605
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-29.png",
+      "kb": 832
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-30.png",
+      "kb": 219
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-31.png",
+      "kb": 2639
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-32.png",
+      "kb": 260
+    },
+    {
+      "rel": "public\\portfolio\\pages\\home-hero-background-2026.png",
+      "kb": 1743
+    },
+    {
+      "rel": "public\\portfolio\\pages\\member-badge-cover-2026.png",
+      "kb": 515
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p06.jpg",
+      "kb": 232
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p07.jpg",
+      "kb": 205
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p08.jpg",
+      "kb": 216
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p13.jpg",
+      "kb": 230
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p27.jpg",
+      "kb": 224
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p32.jpg",
+      "kb": 253
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\01.png",
+      "kb": 374
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\02.png",
+      "kb": 566
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\03.png",
+      "kb": 700
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\04.png",
+      "kb": 291
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\05.png",
+      "kb": 748
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\06.png",
+      "kb": 542
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\07.png",
+      "kb": 553
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\08.png",
+      "kb": 363
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\09.png",
+      "kb": 588
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\10.png",
+      "kb": 598
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\11.png",
+      "kb": 511
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\12.png",
+      "kb": 627
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\13.png",
+      "kb": 423
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\14.png",
+      "kb": 268
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\15.png",
+      "kb": 287
+    }
+  ],
+  "convertedFiles": [
+    {
+      "rel": "public\\downloads\\zhu-xingmeng-resume.png",
+      "before": 586136,
+      "after": 267486,
+      "webp": "public\\downloads\\zhu-xingmeng-resume.webp"
+    },
+    {
+      "rel": "public\\og.png",
+      "before": 2138221,
+      "after": 109280,
+      "webp": "public\\og.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\01-ux-research-skill.png",
+      "before": 513496,
+      "after": 107016,
+      "webp": "public\\portfolio\\ai-application\\01-ux-research-skill.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\02-liblib-image.png",
+      "before": 905579,
+      "after": 163336,
+      "webp": "public\\portfolio\\ai-application\\02-liblib-image.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\03-vibe-coding.png",
+      "before": 829959,
+      "after": 106198,
+      "webp": "public\\portfolio\\ai-application\\03-vibe-coding.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\04-design-production-workflow.png",
+      "before": 716973,
+      "after": 140562,
+      "webp": "public\\portfolio\\ai-application\\04-design-production-workflow.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\05-agent-model.png",
+      "before": 662007,
+      "after": 140352,
+      "webp": "public\\portfolio\\ai-application\\05-agent-model.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\01.png",
+      "before": 5570075,
+      "after": 347862,
+      "webp": "public\\portfolio\\ai-application\\2026\\01.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\02.png",
+      "before": 8459163,
+      "after": 374138,
+      "webp": "public\\portfolio\\ai-application\\2026\\02.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\03.png",
+      "before": 6784144,
+      "after": 558780,
+      "webp": "public\\portfolio\\ai-application\\2026\\03.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\04.png",
+      "before": 6640835,
+      "after": 357790,
+      "webp": "public\\portfolio\\ai-application\\2026\\04.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\05.png",
+      "before": 7624396,
+      "after": 478920,
+      "webp": "public\\portfolio\\ai-application\\2026\\05.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\06.png",
+      "before": 6839707,
+      "after": 455194,
+      "webp": "public\\portfolio\\ai-application\\2026\\06.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\07.png",
+      "before": 3824852,
+      "after": 465162,
+      "webp": "public\\portfolio\\ai-application\\2026\\07.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\08.png",
+      "before": 371575,
+      "after": 182310,
+      "webp": "public\\portfolio\\ai-application\\2026\\08.webp"
+    },
+    {
+      "rel": "public\\portfolio\\ai-application\\2026\\09.png",
+      "before": 510468,
+      "after": 193268,
+      "webp": "public\\portfolio\\ai-application\\2026\\09.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\01.png",
+      "before": 6318957,
+      "after": 221584,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\01.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\02.png",
+      "before": 5596978,
+      "after": 238808,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\02.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\03.png",
+      "before": 13529527,
+      "after": 778846,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\03.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\04.png",
+      "before": 10967155,
+      "after": 550016,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\04.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\05.png",
+      "before": 11135223,
+      "after": 597872,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\05.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\06.png",
+      "before": 14192202,
+      "after": 806674,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\06.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\07.png",
+      "before": 4741943,
+      "after": 432884,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\07.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\08.png",
+      "before": 9483610,
+      "after": 480200,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\08.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\09.png",
+      "before": 11564037,
+      "after": 541350,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\09.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\10.png",
+      "before": 421694,
+      "after": 221006,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\10.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\11.png",
+      "before": 5157965,
+      "after": 430200,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\11.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\12.png",
+      "before": 10539832,
+      "after": 797674,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\12.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\13.png",
+      "before": 4520337,
+      "after": 350504,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\13.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\14.png",
+      "before": 23087691,
+      "after": 679634,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\14.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\15.png",
+      "before": 2585394,
+      "after": 565440,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\15.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\16.png",
+      "before": 4157744,
+      "after": 333124,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\16.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\17.png",
+      "before": 3824615,
+      "after": 392332,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\17.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\18.png",
+      "before": 5379626,
+      "after": 366948,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\18.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-benefits\\2026\\19.png",
+      "before": 6556039,
+      "after": 630030,
+      "webp": "public\\portfolio\\fan-benefits\\2026\\19.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\01-user-scenarios.png",
+      "before": 1171143,
+      "after": 275070,
+      "webp": "public\\portfolio\\fan-growth\\01-user-scenarios.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\02-user-journey.png",
+      "before": 961425,
+      "after": 179546,
+      "webp": "public\\portfolio\\fan-growth\\02-user-journey.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\03-competitor-landscape.png",
+      "before": 1004799,
+      "after": 196034,
+      "webp": "public\\portfolio\\fan-growth\\03-competitor-landscape.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\04-competitor-ux.png",
+      "before": 1247995,
+      "after": 277406,
+      "webp": "public\\portfolio\\fan-growth\\04-competitor-ux.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\05-fan-growth-system.png",
+      "before": 1243875,
+      "after": 422534,
+      "webp": "public\\portfolio\\fan-growth\\05-fan-growth-system.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\06-fan-growth-path.png",
+      "before": 1014996,
+      "after": 189326,
+      "webp": "public\\portfolio\\fan-growth\\06-fan-growth-path.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-fan-followup-01.png",
+      "before": 896045,
+      "after": 98134,
+      "webp": "public\\portfolio\\fan-growth\\07-fan-followup-01.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-fan-followup-02.png",
+      "before": 574767,
+      "after": 149556,
+      "webp": "public\\portfolio\\fan-growth\\07-fan-followup-02.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-fan-followup-03.png",
+      "before": 1016075,
+      "after": 131770,
+      "webp": "public\\portfolio\\fan-growth\\07-fan-followup-03.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-fan-followup-04.png",
+      "before": 2465165,
+      "after": 250194,
+      "webp": "public\\portfolio\\fan-growth\\07-fan-followup-04.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-flower-popup.png",
+      "before": 751140,
+      "after": 249328,
+      "webp": "public\\portfolio\\fan-growth\\07-flower-popup.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\07-signin-calendar.png",
+      "before": 991039,
+      "after": 153030,
+      "webp": "public\\portfolio\\fan-growth\\07-signin-calendar.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\08-other-solutions.png",
+      "before": 1039838,
+      "after": 191318,
+      "webp": "public\\portfolio\\fan-growth\\08-other-solutions.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-01.png",
+      "before": 1512875,
+      "after": 113316,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-01.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-02.png",
+      "before": 1427954,
+      "after": 105340,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-02.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-03.png",
+      "before": 1638641,
+      "after": 120352,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-03.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-04.png",
+      "before": 1496289,
+      "after": 104460,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-04.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-05.png",
+      "before": 1484843,
+      "after": 112702,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-05.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-06.png",
+      "before": 1700890,
+      "after": 119888,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-06.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-07.png",
+      "before": 1654582,
+      "after": 95654,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-07.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-08.png",
+      "before": 1407608,
+      "after": 89376,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-08.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-09.png",
+      "before": 1743242,
+      "after": 117612,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-09.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-10.png",
+      "before": 1815631,
+      "after": 127462,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-10.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-11.png",
+      "before": 2096393,
+      "after": 176500,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-11.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-12.png",
+      "before": 1486097,
+      "after": 108600,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-12.webp"
+    },
+    {
+      "rel": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-13.png",
+      "before": 1618726,
+      "after": 114856,
+      "webp": "public\\portfolio\\fan-growth\\ai-ui-exploration\\visual-13.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-01.png",
+      "before": 969193,
+      "after": 89042,
+      "webp": "public\\portfolio\\member-redesign\\00-process-01.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-02.png",
+      "before": 282166,
+      "after": 48934,
+      "webp": "public\\portfolio\\member-redesign\\00-process-02.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-04.png",
+      "before": 1030576,
+      "after": 107968,
+      "webp": "public\\portfolio\\member-redesign\\00-process-04.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-05.png",
+      "before": 1405987,
+      "after": 244436,
+      "webp": "public\\portfolio\\member-redesign\\00-process-05.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-06.png",
+      "before": 737726,
+      "after": 107246,
+      "webp": "public\\portfolio\\member-redesign\\00-process-06.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-07.png",
+      "before": 335365,
+      "after": 77476,
+      "webp": "public\\portfolio\\member-redesign\\00-process-07.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\00-process-08.png",
+      "before": 712573,
+      "after": 46936,
+      "webp": "public\\portfolio\\member-redesign\\00-process-08.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-benefits-overview.png",
+      "before": 2956333,
+      "after": 282072,
+      "webp": "public\\portfolio\\member-redesign\\01-benefits-overview.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-09.png",
+      "before": 1282513,
+      "after": 148592,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-09.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-10.png",
+      "before": 658332,
+      "after": 96970,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-10.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-11.png",
+      "before": 806285,
+      "after": 122892,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-11.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-12.png",
+      "before": 603963,
+      "after": 90778,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-12.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-13.png",
+      "before": 950901,
+      "after": 102094,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-13.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-14.png",
+      "before": 510493,
+      "after": 81772,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-14.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-15.png",
+      "before": 302177,
+      "after": 28146,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-15.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-16.png",
+      "before": 362997,
+      "after": 63414,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-16.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-17.png",
+      "before": 436316,
+      "after": 77608,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-17.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-18.png",
+      "before": 433475,
+      "after": 109838,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-18.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-19.png",
+      "before": 451609,
+      "after": 30990,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-19.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\01-middle-20.png",
+      "before": 559353,
+      "after": 43196,
+      "webp": "public\\portfolio\\member-redesign\\01-middle-20.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\02-value-perception.png",
+      "before": 1945050,
+      "after": 227520,
+      "webp": "public\\portfolio\\member-redesign\\02-value-perception.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\03-member-benefits.png",
+      "before": 2151576,
+      "after": 257970,
+      "webp": "public\\portfolio\\member-redesign\\03-member-benefits.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\04-conversion.png",
+      "before": 1856403,
+      "after": 212808,
+      "webp": "public\\portfolio\\member-redesign\\04-conversion.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\05-post-purchase.png",
+      "before": 2374166,
+      "after": 231748,
+      "webp": "public\\portfolio\\member-redesign\\05-post-purchase.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\06-expiry.png",
+      "before": 1726781,
+      "after": 212292,
+      "webp": "public\\portfolio\\member-redesign\\06-expiry.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\07-icon-guidelines.png",
+      "before": 1415623,
+      "after": 194456,
+      "webp": "public\\portfolio\\member-redesign\\07-icon-guidelines.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\08-tier-differentiation.png",
+      "before": 1572019,
+      "after": 194924,
+      "webp": "public\\portfolio\\member-redesign\\08-tier-differentiation.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\09-title-type-design.png",
+      "before": 1628880,
+      "after": 213226,
+      "webp": "public\\portfolio\\member-redesign\\09-title-type-design.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-21.png",
+      "before": 1226712,
+      "after": 120220,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-21.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-22.png",
+      "before": 5071681,
+      "after": 403208,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-22.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-23.png",
+      "before": 392376,
+      "after": 26868,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-23.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-24.png",
+      "before": 827805,
+      "after": 95422,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-24.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-25.png",
+      "before": 1058536,
+      "after": 155934,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-25.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-26.png",
+      "before": 2232610,
+      "after": 249466,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-26.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-27.png",
+      "before": 1311913,
+      "after": 121966,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-27.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-28.png",
+      "before": 1643710,
+      "after": 155220,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-28.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-29.png",
+      "before": 851461,
+      "after": 114180,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-29.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-30.png",
+      "before": 224279,
+      "after": 28712,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-30.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-31.png",
+      "before": 2702666,
+      "after": 315182,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-31.webp"
+    },
+    {
+      "rel": "public\\portfolio\\member-redesign\\10-followup-32.png",
+      "before": 266202,
+      "after": 10064,
+      "webp": "public\\portfolio\\member-redesign\\10-followup-32.webp"
+    },
+    {
+      "rel": "public\\portfolio\\pages\\home-hero-background-2026.png",
+      "before": 1784623,
+      "after": 82298,
+      "webp": "public\\portfolio\\pages\\home-hero-background-2026.webp"
+    },
+    {
+      "rel": "public\\portfolio\\pages\\member-badge-cover-2026.png",
+      "before": 527309,
+      "after": 36430,
+      "webp": "public\\portfolio\\pages\\member-badge-cover-2026.webp"
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p06.jpg",
+      "before": 237485,
+      "after": 137368,
+      "webp": "public\\portfolio\\pages\\p06.webp"
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p07.jpg",
+      "before": 209793,
+      "after": 118684,
+      "webp": "public\\portfolio\\pages\\p07.webp"
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p08.jpg",
+      "before": 221663,
+      "after": 128126,
+      "webp": "public\\portfolio\\pages\\p08.webp"
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p13.jpg",
+      "before": 235498,
+      "after": 131262,
+      "webp": "public\\portfolio\\pages\\p13.webp"
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p27.jpg",
+      "before": 229181,
+      "after": 133632,
+      "webp": "public\\portfolio\\pages\\p27.webp"
+    },
+    {
+      "rel": "public\\portfolio\\pages\\p32.jpg",
+      "before": 258940,
+      "after": 154340,
+      "webp": "public\\portfolio\\pages\\p32.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\01.png",
+      "before": 383141,
+      "after": 24524,
+      "webp": "public\\portfolio\\wenxin-tutor\\01.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\02.png",
+      "before": 579963,
+      "after": 94522,
+      "webp": "public\\portfolio\\wenxin-tutor\\02.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\03.png",
+      "before": 716412,
+      "after": 95802,
+      "webp": "public\\portfolio\\wenxin-tutor\\03.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\04.png",
+      "before": 298063,
+      "after": 53956,
+      "webp": "public\\portfolio\\wenxin-tutor\\04.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\05.png",
+      "before": 765606,
+      "after": 64108,
+      "webp": "public\\portfolio\\wenxin-tutor\\05.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\06.png",
+      "before": 554708,
+      "after": 92474,
+      "webp": "public\\portfolio\\wenxin-tutor\\06.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\07.png",
+      "before": 566668,
+      "after": 94316,
+      "webp": "public\\portfolio\\wenxin-tutor\\07.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\08.png",
+      "before": 372141,
+      "after": 69224,
+      "webp": "public\\portfolio\\wenxin-tutor\\08.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\09.png",
+      "before": 601694,
+      "after": 72436,
+      "webp": "public\\portfolio\\wenxin-tutor\\09.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\10.png",
+      "before": 612391,
+      "after": 113798,
+      "webp": "public\\portfolio\\wenxin-tutor\\10.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\11.png",
+      "before": 523145,
+      "after": 184048,
+      "webp": "public\\portfolio\\wenxin-tutor\\11.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\12.png",
+      "before": 641849,
+      "after": 144164,
+      "webp": "public\\portfolio\\wenxin-tutor\\12.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\13.png",
+      "before": 433011,
+      "after": 98852,
+      "webp": "public\\portfolio\\wenxin-tutor\\13.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\14.png",
+      "before": 274066,
+      "after": 120654,
+      "webp": "public\\portfolio\\wenxin-tutor\\14.webp"
+    },
+    {
+      "rel": "public\\portfolio\\wenxin-tutor\\15.png",
+      "before": 294210,
+      "after": 106666,
+      "webp": "public\\portfolio\\wenxin-tutor\\15.webp"
+    }
+  ]
+}

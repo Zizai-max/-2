@@ -43,7 +43,7 @@ export function ProjectExperience() {
           >
             <button className="project-entry" type="button" onClick={() => openProject(index)}>
               <span className="entry-image">
-                <img src={withBasePath(project.coverImage)} alt="" aria-hidden="true" />
+                <img src={withBasePath(project.coverImage)} alt="" aria-hidden="true" loading="lazy" decoding="async" />
                 <span className="entry-overlay" />
               </span>
               <span className={`entry-copy${project.workflowGroups ? " entry-copy-workflow" : ""}`}>
@@ -99,7 +99,7 @@ export function ProjectExperience() {
           <div className="viewer-scroll">
             <section className="viewer-hero">
               {activeProject.slug !== "ai-application" ? (
-                <img className="viewer-hero-image" src={withBasePath(activeProject.coverImage)} alt="" aria-hidden="true" />
+                <img className="viewer-hero-image" src={withBasePath(activeProject.coverImage)} alt="" aria-hidden="true" decoding="async" />
               ) : null}
               <div className="viewer-hero-shade" />
               <div className="viewer-hero-inner shell">
@@ -154,7 +154,7 @@ export function ProjectExperience() {
                       className={`${imageIndex === 0 && section.images.length > 2 && section.galleryStyle !== "three-up" ? "viewer-featured" : ""}${section.galleryStyle === "three-up" ? ` ai-visual-card ai-mask-${String(imageIndex + 1).padStart(2, "0")}` : ""}`}
                       key={image}
                     >
-                      <img loading="lazy" src={withBasePath(image)} alt={`${activeProject.title} - ${section.title} ${imageIndex + 1}`} />
+                      <img loading="lazy" decoding="async" src={withBasePath(image)} alt={`${activeProject.title} - ${section.title} ${imageIndex + 1}`} />
                       <figcaption>{String(sectionIndex + 1).padStart(2, "0")}.{String(imageIndex + 1).padStart(2, "0")}</figcaption>
                     </figure>
                   ))}

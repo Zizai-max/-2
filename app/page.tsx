@@ -13,9 +13,10 @@ export default function Home() {
       <section className="home-hero" id="top" aria-labelledby="hero-title">
         <img
           className="hero-background"
-          src={withBasePath("/portfolio/pages/home-hero-background-2026.png")}
+          src={withBasePath("/portfolio/pages/home-hero-background-2026.webp")}
           alt=""
           aria-hidden="true"
+          decoding="async"
         />
         <div className="hero-darken" />
         <SplashCursor
@@ -69,7 +70,7 @@ export default function Home() {
         <div className="profile-layout shell">
           <figure className="portfolio-portrait">
             <div className="portrait-frame">
-              <img src={withBasePath("/portfolio/portrait.jpg")} alt="朱星梦个人肖像" />
+              <img src={withBasePath("/portfolio/portrait.jpg")} alt="朱星梦个人肖像" loading="lazy" decoding="async" />
             </div>
             <figcaption>PORTRAIT · 2026</figcaption>
           </figure>
@@ -163,11 +164,12 @@ export default function Home() {
                   width="162"
                   height="162"
                   loading="lazy"
+                  decoding="async"
                 />
                 <figcaption>扫码添加微信</figcaption>
               </figure>
             </div>
-            <a href={withBasePath("/downloads/zhu-xingmeng-resume.png")} download="朱星梦-产品设计师简历.png">
+            <a href={withBasePath("/downloads/zhu-xingmeng-resume.webp")} download="朱星梦-产品设计师简历.png">
               下载简历 <b>↓</b>
             </a>
           </div>
